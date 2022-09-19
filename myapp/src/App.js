@@ -1,11 +1,11 @@
 import React from "react";
-import Form from "./components/Form";
+import Calculator from "./components/Calculator";
 
 function App() {
   return (
     <div className="App">
       <h1>Learn React</h1>
-      <Form />
+      <Calculator />
     </div>
   );
 }
