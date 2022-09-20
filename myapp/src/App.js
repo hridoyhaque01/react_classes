@@ -1,21 +1,14 @@
 import React from "react";
-import Bracket from "./components/composition/Bracket";
-import Emoji from "./components/composition/Emoji";
-import Text from "./components/composition/Text";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   return (
     <div className="App">
       <h1>Learn React</h1>
-      <Emoji>
-        {({ addEmoji }) => (
-          <Bracket>
-            {({ addBracket }) => (
-              <Text addBracket={addBracket} addEmoji={addEmoji} />
-            )}
-          </Bracket>
-        )}
-      </Emoji>
+      <ClickCounter />
+      <br />
+      <HoverCounter />
     </div>
   );
 }
