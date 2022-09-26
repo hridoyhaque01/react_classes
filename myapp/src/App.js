@@ -1,15 +1,17 @@
-import React, { Component } from "react";
-import Counter from "./components/Counter";
-import TodoObj from "./components/TodoObj";
+import React, { useState } from "react";
+import MyComponent from "./components/MyComponent";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>hello</h1>
-        <TodoObj />
-        <Counter />
-      </div>
-    );
-  }
+export default function App() {
+  const [show, setShow] = useState(true);
+  return (
+    <div>
+      <h1>I miss You mySelf</h1>
+      <div>{show && <MyComponent />}</div>
+      <p>
+        <button type="button" onClick={() => setShow((prevShow) => !prevShow)}>
+          {show ? "Hide post" : "Show post"}{" "}
+        </button>
+      </p>
+    </div>
+  );
 }
