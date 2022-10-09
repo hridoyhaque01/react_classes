@@ -3,14 +3,3 @@
 body {
   font-family: "Nunito", sans-serif;
 }
-
-button {
-  padding: 12px 20px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: rgb(1, 69, 255);
-  color: #ffffff;
-  font-size: 16px;
-  border-radius: 4px;
-}
