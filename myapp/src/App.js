@@ -1,10 +1,10 @@
 import React from "react";
-import GetPost2 from "./components/GetPost2";
+import LayoutComponent2 from "./components/LayoutComponent2";
 
 export default function App() {
   return (
     <div>
-      <GetPost2 />
+      <LayoutComponent2 />
     </div>
   );
 }

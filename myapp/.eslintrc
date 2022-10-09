@@ -49,7 +49,7 @@
     "no-plusplus": 0,
     "prefer-promise-reject-errors": 0,
     "no-useless-escape": 0,
-    "react-hooks/exhaustive-deps": 0,
+    // "react-hooks/exhaustive-deps": 0,
     "no-underscore-dangle": 0,
     "import/prefer-default-export": 0,
     "react/jsx-filename-extension": [
