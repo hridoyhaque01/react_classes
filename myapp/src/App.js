@@ -1,12 +1,10 @@
 import React from "react";
-import Time from "./components/Time";
+import GetPost2 from "./components/GetPost2";
 
 export default function App() {
   return (
     <div>
-      <div>
-        <Time />
-      </div>
+      <GetPost2 />
     </div>
   );
 }
