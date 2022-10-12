@@ -1,10 +1,12 @@
 import React from "react";
-import LayoutComponent2 from "./components/LayoutComponent2";
+import "./assets/css/global.css";
+import Logo from "./components/Logo";
 
 export default function App() {
   return (
     <div>
-      <LayoutComponent2 />
+      <h1>My Style component</h1>
+      <Logo />
     </div>
   );
 }
