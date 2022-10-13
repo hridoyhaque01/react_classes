@@ -1,12 +1,12 @@
 import React from "react";
-import "./assets/css/global.css";
-import Logo from "./components/Logo";
+import GlobalStyle from "./components/styles/Global.styles";
+import Tutorial from "./components/Tutorial";
 
 export default function App() {
   return (
-    <div>
-      <h1>My Style component</h1>
-      <Logo />
-    </div>
+    <>
+      <GlobalStyle />
+      <Tutorial />
+    </>
   );
 }
