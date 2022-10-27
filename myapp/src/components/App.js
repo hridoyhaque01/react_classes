@@ -8,6 +8,8 @@ import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
 import "../styles/App.css";
 import Layout from "./Layout";
+import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublicRoute";
 
 export default function App() {
   return (
@@ -16,11 +18,19 @@ export default function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/signin" element={<Signin />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route path="/result" element={<Result />} />
-            <Route path="/*" element={<Home />} />
+            <Route path="/signup" element={<PublicRoute />}>
+              <Route path="/signup" element={<Signup />} />
+            </Route>
+            <Route path="/signin" element={<PublicRoute />}>
+              <Route path="/signin" element={<Signin />} />
+            </Route>
+
+            <Route path="/quiz" element={<PrivateRoute />}>
+              <Route path="/quiz" element={<Quiz />} />
+            </Route>
+            <Route path="/result" element={<PrivateRoute />}>
+              <Route path="/result" element={<Result />} />
+            </Route>
           </Routes>
         </Layout>
       </AuthProvider>
